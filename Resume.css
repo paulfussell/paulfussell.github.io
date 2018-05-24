@@ -1,0 +1,28 @@
+.languages{
+	 width: 300px;
+    border: 25px solid black;
+    padding: 25px;
+    margin: 25px;
+	
+	margin: auto;
+    width: 50%;
+	
+	
+}
+
+.test{
+	opacity: 75%;
+	background-color: black;
+	color: white;
+	border: none;
+	width: 23%;
+	height: 15%;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+	margin-left: -.25%;
+}
+
+.row{
+	margin-left: auto;
+    margin-right: auto;
+}
