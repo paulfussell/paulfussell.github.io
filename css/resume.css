@@ -192,3 +192,9 @@ a {
 a:hover, a:focus, a:active {
   color: #24256b;
 }
+
+.justin {
+  width: 100vw;
+  bottom: 0;
+  left: 0;
+}
