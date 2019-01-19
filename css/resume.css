@@ -108,6 +108,7 @@ p.lead {
     -ms-flex-direction: column;
     flex-direction: column;
     width: 21rem;
+    min-width: 21%;
     height: 100vh;
   }
   #sideNav .navbar-brand {
@@ -147,6 +148,12 @@ p.lead {
   }
   #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
     display: block;
+  }
+
+  .justin {
+    width: 0;
+    bottom: 0;
+    left: 0;
   }
 }
 
@@ -193,8 +200,10 @@ a:hover, a:focus, a:active {
   color: #24256b;
 }
 
-.justin {
-  width: 100%;
-  bottom: 0;
-  left: 0;
+@media (max-width: 767px) {
+  .justin {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
 }
