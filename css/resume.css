@@ -17,6 +17,7 @@ body {
     padding-left: 0;
     /* background-image: url("bricks.png");
     background-repeat: repeat; */
+    padding-right: 21rem;
   }
 }
 
@@ -110,7 +111,6 @@ p.lead {
     -ms-flex-direction: column;
     flex-direction: column;
     width: 21rem;
-    min-width: 21%;
     height: 100vh;
   }
   #sideNav .navbar-brand {
@@ -154,9 +154,14 @@ p.lead {
 
   .justin {
     width: 0;
+    display: none;
     bottom: 0;
     left: 0;
   }
+  /* .skill{
+
+
+  } */
 }
 
 section.resume-section {
@@ -209,3 +214,4 @@ a:hover, a:focus, a:active {
     left: 0;
   }
 }
+
