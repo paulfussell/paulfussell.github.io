@@ -12,7 +12,7 @@
   
   @media (min-width: 992px) {
     body {
-      padding-top: 0;
+      padding-top: 80;
       /* padding-left: 17rem; */
       padding-left: 0;
   
@@ -211,6 +211,14 @@
       bottom: 0;
       left: 0;
     }
+  }
+
+  .toolbody{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    border-style: solid;
   }
   
   
