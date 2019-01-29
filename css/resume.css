@@ -209,7 +209,9 @@ a:hover, a:focus, a:active {
 
 @media (max-width: 767px) {
   .justin {
-    width: 100%;
+    /*width: 100%;
+    height: auto; */
+    padding-top: 60%;
     bottom: 0;
     left: 0;
   }
