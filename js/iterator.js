@@ -13,10 +13,10 @@ function myFunction() {
     var zip = new JSZip();
     zip.file("Hello.txt", "Hello World\n");
     var img = zip.folder("img");
-    img.file("", imgData, {base64: true});
+    img.file("favicon.png", imgData, {base64: true});
     zip.generateAsync({type:"blob"})
     .then(function(content) {
-        // see FileSaver.js
+        
         saveAs(content, "example.zip");
     });
   }
@@ -27,8 +27,11 @@ function myFunction() {
     zip.file("readme.txt","test");
     var docs = zip.folder("documents");
     docs.file("hello.txt", "hello world!");
-    var content = zip.generate();
-    location.href="data:application/zip;base64,"+content;
+    var content = zip.generateAsync()
+    // location.href="data:application/zip;base64,"+content;
+    .then(function (blob) {
+        saveAs(blob, "hello.zip");
+    });
 
 
   }
