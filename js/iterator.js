@@ -23,8 +23,12 @@ function myFunction() {
 
   function pack()
   {
-    var zipo = new JSZip();
+    var zip = new JSZip();
     zip.file("readme.txt","test");
+    var docs = zip.folder("documents");
+    docs.file("hello.txt", "hello world!");
+    var content = zip.generate();
+    location.href="data:application/zip;base64,"+content;
 
 
   }
